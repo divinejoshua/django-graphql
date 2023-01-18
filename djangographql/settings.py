@@ -88,7 +88,7 @@ DATABASES = {
 
 # Graphql 
 GRAPHENE = {
-    "SCHEMA": "cookbook.schema.schema"
+    "SCHEMA": "djangographql.schema.schema"
 }
 
 # Password validation
