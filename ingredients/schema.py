@@ -3,6 +3,7 @@ from graphene_django import DjangoObjectType
 
 from ingredients.models import Category, Ingredient
 
+# Define the graphql interface for the models
 class CategoryType(DjangoObjectType):
     class Meta:
         model = Category
@@ -13,6 +14,7 @@ class IngredientType(DjangoObjectType):
         model = Ingredient
         fields = ("id", "name", "notes", "category")
 
+# Create the query 
 class Query(graphene.ObjectType):
     all_ingredients = graphene.List(IngredientType)
     category_by_name = graphene.Field(CategoryType, name=graphene.String(required=True))
