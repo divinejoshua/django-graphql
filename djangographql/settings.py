@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangographql.wsgi.application'
+WSGI_APPLICATION = 'djangographql.wsgi.application' 
 
 
 # Database
