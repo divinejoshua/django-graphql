@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Project apps 
     'ingredients',
+    'accounts',
 
     # Installed apps
     'graphene_django',
