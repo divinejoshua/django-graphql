@@ -6,6 +6,8 @@ from dj_rest_auth.views import (
     PasswordResetView, UserDetailsView,
 )
 
+app_name = "djrest_api"
+
 
 urlpatterns = [
     # URLs that do not require a session or valid token

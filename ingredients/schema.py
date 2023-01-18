@@ -1,7 +1,7 @@
 import graphene
 from graphene_django import DjangoObjectType
 
-from ingredients.models import Category, Ingredient
+from .models import Category, Ingredient
 
 # Define the graphql interface for the models
 class CategoryType(DjangoObjectType):
