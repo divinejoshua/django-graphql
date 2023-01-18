@@ -45,11 +45,15 @@ INSTALLED_APPS = [
     'dj_rest_auth',
 
     # Installed apps
+    'rest_framework',
+    'rest_framework.authtoken',
     'graphene_django',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
