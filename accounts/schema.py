@@ -18,6 +18,7 @@ class Query(graphene.ObjectType):
     def resolve_get_user(root, info, **kwargs):
 
         # Check if the user is logged in
+        print(info.context.META.get('HTTP_AUTHORIZATION'))
         if not info.context.user.is_authenticated:
             return None
 
