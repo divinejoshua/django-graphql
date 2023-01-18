@@ -1,11 +1,14 @@
 from django.db import models
 
+# Category model 
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
+
+# Ingredients model
 class Ingredient(models.Model):
     name = models.CharField(max_length=100)
     notes = models.TextField()
