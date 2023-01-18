@@ -93,6 +93,7 @@ DATABASES = {
     }
 }
 
+# REST framework 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
@@ -115,6 +116,11 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
     'REFRESH_TOKEN_LIFETIME': timedelta(minutes=60),
 }
+
+
+# CORS  
+CORS_ALLOW_ALL_ORIGINS  = True
+CORS_ALLOW_CREDENTIALS = True
 
 
 # Password validation
