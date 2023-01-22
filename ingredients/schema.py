@@ -3,7 +3,7 @@ from graphene_django import DjangoObjectType
 
 from .models import Category, Ingredient
 
-# Define the graphql interface for the models
+# Define the graphql interface for the models 
 class CategoryType(DjangoObjectType):
     class Meta:
         model = Category
