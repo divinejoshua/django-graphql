@@ -4,7 +4,7 @@ from graphene_django import DjangoObjectType
 from .models import Category, Ingredient
 
 # Define the graphql interface for the models
-class CategoryType(DjangoObjectType):
+class CategoryType(DjangoObjectType): 
     class Meta:
         model = Category
         fields = ("id", "name", "ingredients")
