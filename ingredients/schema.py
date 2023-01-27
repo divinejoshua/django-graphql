@@ -6,7 +6,7 @@ from .models import Category, Ingredient
 # Define the graphql interface for the models 
 class CategoryType(DjangoObjectType):   
     class Meta:
-        model = Category
+        model = Category 
         fields = ("id", "name", "ingredients")
 
 class IngredientType(DjangoObjectType):
